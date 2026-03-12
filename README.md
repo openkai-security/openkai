@@ -77,7 +77,7 @@ Automatically generate threat models for applications and infrastructure. Map to
 
 ### Prerequisites
 
-- [OpenClaw](https://github.com/nicepkg/openclaw) installed and running
+- [OpenClaw](https://github.com/openclaw/openclaw) installed and running
 - Node.js 20+
 - An LLM API key (Claude, OpenAI, etc.)
 

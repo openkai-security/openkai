@@ -27,7 +27,7 @@ Check the issue tracker for open issues, or report new ones.
 ```bash
 # Clone OpenKai and OpenClaw
 git clone https://github.com/openkai-security/openkai.git
-git clone https://github.com/nicepkg/openclaw.git
+git clone https://github.com/openclaw/openclaw.git
 
 # Set up OpenClaw
 cd openclaw
