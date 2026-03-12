@@ -85,7 +85,7 @@ Automatically generate threat models for applications and infrastructure. Map to
 
 ```bash
 # Clone OpenKai
-git clone https://github.com/your-org/openkai.git
+git clone https://github.com/openkai-security/openkai.git
 cd openkai
 
 # Run the setup script — this configures OpenClaw as a security agent
