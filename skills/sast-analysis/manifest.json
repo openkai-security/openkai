@@ -1,0 +1,8 @@
+{
+  "id": "sast-analysis",
+  "name": "SAST Finding Analysis",
+  "description": "Static Application Security Testing analysis that evaluates code-level findings, eliminates false positives, and produces developer-friendly remediation guidance.",
+  "version": "0.1.0",
+  "author": "OpenKai",
+  "tags": ["security", "appsec"]
+}

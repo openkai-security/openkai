@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-nessus",
+  "version": "0.1.0",
+  "description": "OpenKai Nessus connector — local scanner scan and vulnerability retrieval",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

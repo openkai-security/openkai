@@ -1,0 +1,8 @@
+{
+  "id": "detection-rules",
+  "name": "Detection Rule Engineering",
+  "description": "Detection rule generation, tuning, and validation for SIEM platforms, producing rules in Sigma, SPL, KQL, and other query languages.",
+  "version": "0.1.0",
+  "author": "OpenKai",
+  "tags": ["security", "detection-engineering"]
+}

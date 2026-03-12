@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-orca",
+  "version": "0.1.0",
+  "description": "OpenKai Orca Security connector — cloud security alerts and asset inventory",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

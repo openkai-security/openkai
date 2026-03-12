@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/assets",
+  "version": "0.1.0",
+  "description": "OpenKai asset management extension — discovery, enrichment, and ownership mapping",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,8 @@
+{
+  "id": "asset-discovery",
+  "name": "Asset Discovery and Enrichment",
+  "description": "IT/OT asset discovery, classification, and enrichment to build and maintain a comprehensive asset inventory for security operations.",
+  "version": "0.1.0",
+  "author": "OpenKai",
+  "tags": ["security", "asset-management"]
+}

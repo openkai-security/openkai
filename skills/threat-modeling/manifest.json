@@ -1,0 +1,8 @@
+{
+  "id": "threat-modeling",
+  "name": "Threat Modeling",
+  "description": "Automated threat modeling using STRIDE and MITRE ATT&CK frameworks to identify threats, attack surfaces, and recommended mitigations for system architectures.",
+  "version": "0.1.0",
+  "author": "OpenKai",
+  "tags": ["security", "threat-modeling"]
+}

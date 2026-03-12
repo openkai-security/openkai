@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-crowdstrike",
+  "version": "0.1.0",
+  "description": "OpenKai CrowdStrike Falcon connector — endpoint detection and response",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

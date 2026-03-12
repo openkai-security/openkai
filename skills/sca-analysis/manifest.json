@@ -1,0 +1,8 @@
+{
+  "id": "sca-analysis",
+  "name": "SCA Finding Analysis",
+  "description": "Software Composition Analysis for evaluating dependency vulnerabilities, assessing reachability, and producing upgrade plans with breaking change risk assessment.",
+  "version": "0.1.0",
+  "author": "OpenKai",
+  "tags": ["security", "supply-chain"]
+}

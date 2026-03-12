@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-github-security",
+  "version": "0.1.0",
+  "description": "OpenKai GitHub Advanced Security connector — code scanning, Dependabot, and secret scanning alerts",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

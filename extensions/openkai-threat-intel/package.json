@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/threat-intel",
+  "version": "0.1.0",
+  "description": "OpenKai threat intelligence extension — analysis, TTP mapping, and threat modeling",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

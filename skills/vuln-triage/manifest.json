@@ -1,0 +1,8 @@
+{
+  "id": "vuln-triage",
+  "name": "Vulnerability Triage",
+  "description": "Systematic vulnerability triage workflow that prioritizes findings by exploitability, asset context, and business risk to produce actionable remediation plans.",
+  "version": "0.1.0",
+  "author": "OpenKai",
+  "tags": ["security", "vulnerability-management"]
+}

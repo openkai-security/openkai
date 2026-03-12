@@ -1,0 +1,30 @@
+{
+  "name": "openkai",
+  "version": "0.1.0",
+  "description": "OpenKai — Open-Source Agentic AI Cybersecurity Platform. Transforms OpenClaw into an autonomous security agent.",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/openkai-security/openkai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openkai-security/openkai.git"
+  },
+  "keywords": [
+    "cybersecurity",
+    "ai-agent",
+    "security-automation",
+    "vulnerability-management",
+    "detection-engineering",
+    "threat-intelligence",
+    "compliance",
+    "openclaw",
+    "agentic-ai"
+  ],
+  "scripts": {
+    "setup": "./setup.sh",
+    "setup:config": "./setup.sh --apply-config",
+    "uninstall": "./setup.sh --uninstall"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@openkai/core",
+  "version": "0.1.0",
+  "description": "OpenKai core extension — shared utilities, i18n, and base security context",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "skills": ["../../skills/vuln-triage", "../../skills/sast-analysis", "../../skills/sca-analysis", "../../skills/threat-modeling", "../../skills/detection-rules", "../../skills/compliance-audit", "../../skills/asset-discovery", "../../skills/log-analysis", "../../skills/identity-audit"]
+  },
+  "dependencies": {}
+}

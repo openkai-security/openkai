@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-splunk",
+  "version": "0.1.0",
+  "description": "OpenKai Splunk connector — log search, alert management, and detection rule deployment",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/identity",
+  "version": "0.1.0",
+  "description": "OpenKai identity security extension — IAM audit and least-privilege enforcement",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

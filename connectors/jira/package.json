@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-jira",
+  "version": "0.1.0",
+  "description": "OpenKai Jira connector — issue creation, search, and management",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

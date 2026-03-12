@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/appsec",
+  "version": "0.1.0",
+  "description": "OpenKai application security extension — SAST/SCA analysis and code fix generation",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

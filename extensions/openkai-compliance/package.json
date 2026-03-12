@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/compliance",
+  "version": "0.1.0",
+  "description": "OpenKai compliance automation extension — framework assessment, evidence collection, and gap analysis",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

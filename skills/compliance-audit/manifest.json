@@ -1,0 +1,8 @@
+{
+  "id": "compliance-audit",
+  "name": "Compliance Posture Assessment",
+  "description": "Automated compliance assessment against security frameworks (SOC 2, ISO 27001, NIST CSF, PCI DSS, HIPAA, CIS Benchmarks) with gap analysis and evidence mapping.",
+  "version": "0.1.0",
+  "author": "OpenKai",
+  "tags": ["security", "compliance"]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-snyk",
+  "version": "0.1.0",
+  "description": "OpenKai Snyk connector — SCA vulnerability and project management",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

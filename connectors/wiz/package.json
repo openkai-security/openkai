@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-wiz",
+  "version": "0.1.0",
+  "description": "OpenKai Wiz connector — cloud security issues and inventory",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

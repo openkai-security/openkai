@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-semgrep",
+  "version": "0.1.0",
+  "description": "OpenKai Semgrep connector — SAST findings and project management",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

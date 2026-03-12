@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-sentinel",
+  "version": "0.1.0",
+  "description": "OpenKai Microsoft Sentinel connector — KQL search and incident management",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "locale": "en",
+    "name": "English",
+    "direction": "ltr"
+  },
+  "core": {
+    "name": "OpenKai",
+    "tagline": "Agentic AI Cybersecurity Platform",
+    "description": "Open-source autonomous security agent powered by OpenClaw"
+  },
+  "agents": {
+    "commander": {
+      "name": "OpenKai Commander",
+      "description": "Orchestrator agent — routes and coordinates security tasks across specialist agents"
+    },
+    "vuln_analyst": {
+      "name": "Vulnerability Analyst",
+      "description": "Triages, prioritizes, and remediates vulnerabilities at machine speed"
+    },
+    "detection_engineer": {
+      "name": "Detection Engineer",
+      "description": "Generates, tunes, and validates detection rules for your SIEM"
+    },
+    "asset_manager": {
+      "name": "Asset Manager",
+      "description": "Discovers, enriches, and maps ownership of all cyber assets"
+    },
+    "threat_intel": {
+      "name": "Threat Intel Analyst",
+      "description": "Distills threat intelligence and maps TTPs to your environment"
+    },
+    "compliance_auditor": {
+      "name": "Compliance Auditor",
+      "description": "Automates compliance evidence collection and gap analysis"
+    },
+    "appsec_analyst": {
+      "name": "AppSec Analyst",
+      "description": "Analyzes SAST and SCA findings to identify true-positive vulnerabilities"
+    },
+    "identity_guardian": {
+      "name": "Identity Guardian",
+      "description": "Audits IAM configurations and enforces least-privilege policies"
+    },
+    "log_optimizer": {
+      "name": "Log Optimizer",
+      "description": "Optimizes log pipelines to reduce SIEM costs while preserving coverage"
+    }
+  },
+  "tools": {
+    "vuln_triage": {
+      "name": "Triage Vulnerabilities",
+      "description": "Analyze and prioritize vulnerabilities based on exploitability, asset context, and business impact"
+    },
+    "vuln_search": {
+      "name": "Search Vulnerabilities",
+      "description": "Search vulnerability databases (NVD, EPSS, KEV) for specific CVEs or patterns"
+    },
+    "vuln_remediate": {
+      "name": "Generate Remediation",
+      "description": "Generate step-by-step remediation guidance for identified vulnerabilities"
+    },
+    "detection_generate_rule": {
+      "name": "Generate Detection Rule",
+      "description": "Create SIEM detection rules (Sigma, SPL, KQL) for specified threat patterns"
+    },
+    "detection_tune_rule": {
+      "name": "Tune Detection Rule",
+      "description": "Optimize existing detection rules to reduce false positives"
+    },
+    "detection_validate_rule": {
+      "name": "Validate Detection Rule",
+      "description": "Test detection rules against sample data for correctness and coverage"
+    },
+    "asset_discover": {
+      "name": "Discover Assets",
+      "description": "Scan and discover IT/OT assets across the environment"
+    },
+    "asset_enrich": {
+      "name": "Enrich Asset",
+      "description": "Enrich asset records with ownership, criticality, and context data"
+    },
+    "asset_map_ownership": {
+      "name": "Map Asset Ownership",
+      "description": "Determine and assign ownership for discovered assets"
+    },
+    "threat_intel_analyze": {
+      "name": "Analyze Threat Intel",
+      "description": "Process and analyze threat intelligence reports, IOCs, and TTPs"
+    },
+    "threat_intel_map_ttps": {
+      "name": "Map TTPs",
+      "description": "Map threat actor TTPs to MITRE ATT&CK framework and your environment"
+    },
+    "threat_model_generate": {
+      "name": "Generate Threat Model",
+      "description": "Create threat models using STRIDE, MITRE ATT&CK, or custom frameworks"
+    },
+    "compliance_assess": {
+      "name": "Assess Compliance",
+      "description": "Evaluate compliance posture against frameworks (NIST, ISO 27001, SOC 2, etc.)"
+    },
+    "compliance_collect_evidence": {
+      "name": "Collect Evidence",
+      "description": "Automatically gather compliance evidence from connected systems"
+    },
+    "compliance_gap_analysis": {
+      "name": "Gap Analysis",
+      "description": "Identify compliance gaps and generate remediation recommendations"
+    },
+    "log_analyze_pipeline": {
+      "name": "Analyze Log Pipeline",
+      "description": "Analyze log sources to identify volume, value, and optimization opportunities"
+    },
+    "log_optimize_routing": {
+      "name": "Optimize Log Routing",
+      "description": "Generate routing rules to direct low-value logs to cold storage"
+    },
+    "identity_audit_permissions": {
+      "name": "Audit Permissions",
+      "description": "Audit IAM policies and identify excessive or unused privileges"
+    },
+    "identity_generate_policy": {
+      "name": "Generate Least-Privilege Policy",
+      "description": "Generate least-privilege IAM policies based on actual usage patterns"
+    },
+    "appsec_analyze_sast": {
+      "name": "Analyze SAST Findings",
+      "description": "Triage static analysis findings to identify true-positive code vulnerabilities"
+    },
+    "appsec_analyze_sca": {
+      "name": "Analyze SCA Findings",
+      "description": "Analyze software composition findings for exploitable dependency vulnerabilities"
+    },
+    "appsec_generate_fix": {
+      "name": "Generate Code Fix",
+      "description": "Generate developer-ready code fixes for identified application vulnerabilities"
+    }
+  },
+  "connectors": {
+    "splunk": {
+      "name": "Splunk",
+      "description": "Connect to Splunk for log search, alert management, and detection rule deployment"
+    },
+    "elastic": {
+      "name": "Elasticsearch",
+      "description": "Connect to Elasticsearch/Kibana for log search and security analytics"
+    },
+    "sentinel": {
+      "name": "Microsoft Sentinel",
+      "description": "Connect to Microsoft Sentinel for cloud-native SIEM operations"
+    },
+    "crowdstrike": {
+      "name": "CrowdStrike",
+      "description": "Connect to CrowdStrike Falcon for endpoint detection and response"
+    },
+    "qualys": {
+      "name": "Qualys",
+      "description": "Connect to Qualys for vulnerability scanning and assessment data"
+    },
+    "tenable": {
+      "name": "Tenable",
+      "description": "Connect to Tenable.io/Nessus for vulnerability scan results"
+    },
+    "snyk": {
+      "name": "Snyk",
+      "description": "Connect to Snyk for SCA and container vulnerability data"
+    },
+    "github_security": {
+      "name": "GitHub Advanced Security",
+      "description": "Connect to GitHub for code scanning, secret scanning, and Dependabot alerts"
+    },
+    "jira": {
+      "name": "Jira",
+      "description": "Connect to Jira for security issue tracking and remediation workflows"
+    },
+    "servicenow": {
+      "name": "ServiceNow",
+      "description": "Connect to ServiceNow for ITSM integration and change management"
+    }
+  },
+  "skills": {
+    "vuln_triage": {
+      "name": "Vulnerability Triage",
+      "description": "Systematic vulnerability triage workflow with exploitability analysis"
+    },
+    "sast_analysis": {
+      "name": "SAST Analysis",
+      "description": "Static application security testing finding analysis and triage"
+    },
+    "sca_analysis": {
+      "name": "SCA Analysis",
+      "description": "Software composition analysis finding analysis and triage"
+    },
+    "threat_modeling": {
+      "name": "Threat Modeling",
+      "description": "Automated threat modeling with STRIDE and MITRE ATT&CK mapping"
+    },
+    "detection_rules": {
+      "name": "Detection Rules",
+      "description": "Detection rule generation, tuning, and validation"
+    },
+    "compliance_audit": {
+      "name": "Compliance Audit",
+      "description": "Compliance posture assessment and evidence collection"
+    },
+    "asset_discovery": {
+      "name": "Asset Discovery",
+      "description": "IT/OT asset discovery, enrichment, and ownership mapping"
+    },
+    "log_analysis": {
+      "name": "Log Analysis",
+      "description": "Log pipeline analysis and cost optimization"
+    },
+    "identity_audit": {
+      "name": "Identity Audit",
+      "description": "IAM policy audit and least-privilege enforcement"
+    }
+  },
+  "messages": {
+    "welcome": "Welcome to OpenKai. I'm your autonomous security agent. How can I help secure your environment?",
+    "task_delegated": "I've delegated this task to {{agent}}.",
+    "task_complete": "Task complete. Here's the summary:",
+    "no_connector": "No connector configured for {{service}}. Please configure it in your .env file.",
+    "connector_error": "Error connecting to {{service}}: {{error}}",
+    "processing": "Analyzing... This may take a moment for large datasets.",
+    "confirm_action": "I'm about to {{action}}. Shall I proceed?",
+    "error_generic": "An error occurred: {{error}}. Please check the logs for details."
+  }
+}

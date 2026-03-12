@@ -1,0 +1,8 @@
+{
+  "id": "identity-audit",
+  "name": "IAM Permission Audit",
+  "description": "Identity and Access Management audit for analyzing permissions, enforcing least privilege, detecting excessive access, and identifying dormant accounts across cloud and on-premises environments.",
+  "version": "0.1.0",
+  "author": "OpenKai",
+  "tags": ["security", "identity"]
+}

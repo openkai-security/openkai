@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-servicenow",
+  "version": "0.1.0",
+  "description": "OpenKai ServiceNow connector — incident creation and search",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

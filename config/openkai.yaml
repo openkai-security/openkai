@@ -1,0 +1,239 @@
+# =============================================================================
+# OpenKai — OpenClaw Configuration Overlay
+# =============================================================================
+# This file configures OpenClaw as a cybersecurity autonomous agent platform.
+# Place this in ~/.openclaw/config.yaml or use: openclaw gateway -c ./config/openkai.yaml
+#
+# Environment variables are substituted at runtime: ${VAR_NAME}
+# =============================================================================
+
+# --- Identity ---
+identity:
+  name: "OpenKai"
+  emoji: "🛡️"
+
+# --- Memory ---
+memory:
+  backend: "builtin"
+  citations: "auto"
+
+# --- Models ---
+models:
+  defaults:
+    primary: "claude-sonnet-4-6"
+    fallbacks:
+      - "gpt-4o"
+
+# --- Agents ---
+agents:
+  defaults:
+    model:
+      primary: "claude-sonnet-4-6"
+    identity:
+      name: "OpenKai"
+      emoji: "🛡️"
+
+  list:
+    # Commander — the orchestrator agent
+    - id: openkai-commander
+      default: true
+      name: "OpenKai Commander"
+      identity:
+        name: "OpenKai"
+        emoji: "🛡️"
+      skills:
+        - "vuln-triage"
+        - "sast-analysis"
+        - "sca-analysis"
+        - "threat-modeling"
+        - "detection-rules"
+        - "compliance-audit"
+        - "asset-discovery"
+        - "log-analysis"
+        - "identity-audit"
+      subagents:
+        allowAgents:
+          - "vuln-analyst"
+          - "detection-engineer"
+          - "asset-manager"
+          - "threat-intel"
+          - "compliance-auditor"
+          - "appsec-analyst"
+          - "identity-guardian"
+          - "log-optimizer"
+
+    # Vulnerability Management Specialist
+    - id: vuln-analyst
+      name: "Vulnerability Analyst"
+      identity:
+        name: "VulnAnalyst"
+        emoji: "🔍"
+      skills:
+        - "vuln-triage"
+
+    # Detection Engineering Specialist
+    - id: detection-engineer
+      name: "Detection Engineer"
+      identity:
+        name: "DetectionEng"
+        emoji: "📡"
+      skills:
+        - "detection-rules"
+
+    # Asset Management Specialist
+    - id: asset-manager
+      name: "Asset Manager"
+      identity:
+        name: "AssetMgr"
+        emoji: "🗂️"
+      skills:
+        - "asset-discovery"
+
+    # Threat Intelligence Specialist
+    - id: threat-intel
+      name: "Threat Intel Analyst"
+      identity:
+        name: "ThreatIntel"
+        emoji: "🕵️"
+      skills:
+        - "threat-modeling"
+
+    # Compliance & Audit Specialist
+    - id: compliance-auditor
+      name: "Compliance Auditor"
+      identity:
+        name: "ComplianceBot"
+        emoji: "📋"
+      skills:
+        - "compliance-audit"
+
+    # Application Security Specialist
+    - id: appsec-analyst
+      name: "AppSec Analyst"
+      identity:
+        name: "AppSecBot"
+        emoji: "🔐"
+      skills:
+        - "sast-analysis"
+        - "sca-analysis"
+
+    # Identity & Access Security Specialist
+    - id: identity-guardian
+      name: "Identity Guardian"
+      identity:
+        name: "IdentityBot"
+        emoji: "🔑"
+      skills:
+        - "identity-audit"
+
+    # Log Optimization Specialist
+    - id: log-optimizer
+      name: "Log Optimizer"
+      identity:
+        name: "LogOptimizer"
+        emoji: "📊"
+      skills:
+        - "log-analysis"
+
+# --- Plugins ---
+plugins:
+  entries:
+    - id: openkai-core
+      enabled: true
+      config:
+        locale: "${OPENKAI_LOCALE:en}"
+
+    - id: openkai-vuln
+      enabled: true
+
+    - id: openkai-detection
+      enabled: true
+
+    - id: openkai-assets
+      enabled: true
+
+    - id: openkai-threat-intel
+      enabled: true
+
+    - id: openkai-compliance
+      enabled: true
+
+    - id: openkai-log-optimizer
+      enabled: true
+
+    - id: openkai-identity
+      enabled: true
+
+    - id: openkai-appsec
+      enabled: true
+
+    # --- Connector Plugins (enable as needed) ---
+    - id: connector-splunk
+      enabled: false
+      config:
+        url: "${SPLUNK_URL}"
+        token: "${SPLUNK_TOKEN}"
+        index: "${SPLUNK_INDEX:main}"
+
+    - id: connector-elastic
+      enabled: false
+      config:
+        url: "${ELASTIC_URL}"
+        apiKey: "${ELASTIC_API_KEY}"
+        index: "${ELASTIC_INDEX:security-*}"
+
+    - id: connector-sentinel
+      enabled: false
+      config:
+        workspaceId: "${SENTINEL_WORKSPACE_ID}"
+        tenantId: "${SENTINEL_TENANT_ID}"
+        clientId: "${SENTINEL_CLIENT_ID}"
+        clientSecret: "${SENTINEL_CLIENT_SECRET}"
+
+    - id: connector-crowdstrike
+      enabled: false
+      config:
+        clientId: "${CROWDSTRIKE_CLIENT_ID}"
+        clientSecret: "${CROWDSTRIKE_CLIENT_SECRET}"
+        baseUrl: "${CROWDSTRIKE_BASE_URL:https://api.crowdstrike.com}"
+
+    - id: connector-qualys
+      enabled: false
+      config:
+        url: "${QUALYS_URL}"
+        username: "${QUALYS_USERNAME}"
+        password: "${QUALYS_PASSWORD}"
+
+    - id: connector-tenable
+      enabled: false
+      config:
+        accessKey: "${TENABLE_ACCESS_KEY}"
+        secretKey: "${TENABLE_SECRET_KEY}"
+        url: "${TENABLE_URL:https://cloud.tenable.com}"
+
+    - id: connector-snyk
+      enabled: false
+      config:
+        token: "${SNYK_TOKEN}"
+        orgId: "${SNYK_ORG_ID}"
+
+    - id: connector-github-security
+      enabled: false
+      config:
+        token: "${GITHUB_TOKEN}"
+        org: "${GITHUB_ORG}"
+
+    - id: connector-jira
+      enabled: false
+      config:
+        url: "${JIRA_URL}"
+        email: "${JIRA_EMAIL}"
+        apiToken: "${JIRA_API_TOKEN}"
+        projectKey: "${JIRA_PROJECT_KEY}"
+
+    - id: connector-servicenow
+      enabled: false
+      config:
+        instance: "${SERVICENOW_INSTANCE}"
+        username: "${SERVICENOW_USERNAME}"
+        password: "${SERVICENOW_PASSWORD}"

@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/detection",
+  "version": "0.1.0",
+  "description": "OpenKai detection engineering extension — rule generation, tuning, and validation",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

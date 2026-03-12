@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/vuln",
+  "version": "0.1.0",
+  "description": "OpenKai vulnerability management extension — triage, search, and remediation tools",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

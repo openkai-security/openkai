@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/log-optimizer",
+  "version": "0.1.0",
+  "description": "OpenKai log optimization extension — pipeline analysis and cost optimization",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

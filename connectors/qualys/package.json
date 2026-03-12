@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-qualys",
+  "version": "0.1.0",
+  "description": "OpenKai Qualys connector — vulnerability scanning and assessment",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

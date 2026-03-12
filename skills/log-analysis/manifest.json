@@ -1,0 +1,8 @@
+{
+  "id": "log-analysis",
+  "name": "Log Pipeline Analysis",
+  "description": "Log pipeline analysis and optimization to improve SIEM efficiency, reduce costs, control data volume, and ensure security-critical log coverage.",
+  "version": "0.1.0",
+  "author": "OpenKai",
+  "tags": ["security", "log-management"]
+}

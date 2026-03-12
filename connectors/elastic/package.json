@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-elastic",
+  "version": "0.1.0",
+  "description": "OpenKai Elasticsearch connector — log search and security analytics",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}

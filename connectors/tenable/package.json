@@ -1,0 +1,10 @@
+{
+  "name": "@openkai/connector-tenable",
+  "version": "0.1.0",
+  "description": "OpenKai Tenable.io connector — vulnerability and asset management",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {}
+}
