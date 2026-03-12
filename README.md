@@ -1,6 +1,6 @@
 # OpenKai — Open-Source Agentic AI Cybersecurity Platform
 
-**OpenKai** transforms [OpenClaw](https://github.com/nicepkg/openclaw) into an autonomous cybersecurity agent platform. It gives every enterprise security team the power to build, run, and evolve their own AI-driven security operations — without depending on proprietary security vendors.
+**OpenKai** transforms [OpenClaw](https://github.com/openclaw/openclaw) into an autonomous cybersecurity agent platform. It gives every enterprise security team the power to build, run, and evolve their own AI-driven security operations — without depending on proprietary security vendors.
 
 > **Our thesis:** In the age of AI, enterprise security teams should not need to buy a security platform from a vendor. They should build and operate their own — powered by open-source agentic AI, tailored to their own IT/OT environment, and continuously improved with tools like Claude Code and OpenAI Codex.
 
